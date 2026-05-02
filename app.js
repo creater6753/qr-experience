@@ -1,23 +1,10 @@
-let state = 0;
+function check() {
+  let v = document.getElementById("input").value.toLowerCase().trim();
 
-window.onload = () => {
-  console.log("APP CARREGOU");
-};
-
-function gerar() {
-  state++;
-
-  const frases = [
-    "NODE-7 está ativo",
-    "o sistema observa",
-    "há padrões escondidos",
-    "não confies no acaso"
-  ];
-
-  document.getElementById("output").innerText =
-    frases[Math.floor(Math.random() * frases.length)];
-
-  if (state === 7) {
+  if (v === "going") {
     window.location.href = "node7.html";
+  } else {
+    document.getElementById("output").innerText =
+      "erro de sincronização... tenta outra vez";
   }
 }
