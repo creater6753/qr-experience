@@ -1,15 +1,10 @@
-let code = "";
-
-function add(part) {
-  code += part;
-  document.getElementById("code").innerText = code;
-}
-
 function check() {
-  if (code === "going") {
+  let v = document.getElementById("input").value.toLowerCase().trim();
+
+  if (v === "going") {
     window.location.href = "node7.html";
   } else {
     document.getElementById("output").innerText =
-      "sequência inválida";
+      "padrão inválido... tenta pensar no tempo verbal";
   }
 }
