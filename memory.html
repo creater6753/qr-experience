@@ -9,24 +9,19 @@
 
   <h1>MEMÓRIA CORROMPIDA</h1>
 
-  <p>Tu já passaste por aqui.</p>
-  <p>Mas o NODE-7 apagou parte do registo.</p>
-  <p>Algo está incompleto.</p>
+  <p>Recuperação parcial completa.</p>
+
+  <p>Mensagem final do sistema:</p>
+
+  <p><b>"O NODE-7 era apenas o início."</b></p>
 
   <br>
 
-  <input id="c" placeholder="o que falta?" />
-  <button onclick="check()">confirmar</button>
+  <button onclick="go()">continuar</button>
 
   <script>
-    function check() {
-      let v = document.getElementById("c").value.toLowerCase().trim();
-
-      if (v.includes("signal")) {
-        window.location.href = "final.html";
-      } else {
-        alert("memória não reconhecida");
-      }
+    function go() {
+      window.location.href = "final.html";
     }
   </script>
 
