@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 <head>
-  <title>Mistério</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Boredom Portal</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body style="background:black;color:lime;text-align:center;font-family:monospace;padding:50px;">
+<body>
 
-<h1>Algo está escondido...</h1>
+  <div class="container">
+    <h1>🌀 Boredom Portal</h1>
+    <p id="output">Carrega no botão para algo aleatório 👇</p>
 
-<p>Clica para revelar o primeiro segredo</p>
+    <button onclick="gerar()">Surpreende-me</button>
+  </div>
 
-<button onclick="alert('A primeira pista está no início')">
-Revelar
-</button>
-
+  <script src="app.js"></script>
 </body>
 </html>
