@@ -1,8 +1,12 @@
 let state = 0;
 
+window.onload = () => {
+  console.log("APP CARREGOU");
+};
+
 function gerar() {
   state++;
-alert("APP CARREGOU");
+
   const frases = [
     "NODE-7 está ativo",
     "o sistema observa",
