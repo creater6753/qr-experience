@@ -31,7 +31,14 @@ Dica: a primeira chave não é uma palavra.
 
   if (fase === 5) {
     title.innerText = "FINAL";
-    text.innerText = "Tu encontraste o sinal.\nMas ele também te encontrou.";
+    text.innerText = "NODE-7 FOI ESTABILIZADO
+
+Mas ele ainda está ativo.
+
+Obrigado por completares o teste.
+
+Isto não era um jogo.
+Era um reconhecimento.";
   }
 
   input.value = "";
