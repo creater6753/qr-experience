@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>NODE-7</title>
+</head>
 
+<body style="background:black;color:#00ff9d;font-family:monospace;text-align:center;padding-top:100px">
+
+  <h1>NODE-7</h1>
+
+  <p>O sistema reconheceu-te.</p>
+  <p>Agora responde corretamente.</p>
+
+  <br>
+
+  <input id="input" placeholder="código..." />
+  <button onclick="check()">entrar</button>
+
+  <script>
+    function check() {
+      let v = document.getElementById("input").value.toLowerCase().trim();
+
+      // 🔑 resposta correta
+      if (v === "going") {
+        window.location.href = "memory.html";
+      } else {
+        alert("NODE-7 rejeitou a resposta");
+      }
+    }
+  </script>
+
+</body>
+</html>
