@@ -2,7 +2,7 @@ let state = 0;
 
 function gerar() {
   state++;
-
+alert("APP CARREGOU");
   const frases = [
     "NODE-7 está ativo",
     "o sistema observa",
