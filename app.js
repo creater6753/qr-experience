@@ -17,4 +17,3 @@ function gerar() {
     window.location.href = "node7.html";
   }
 }
-alert("JS ESTÁ A FUNCIONAR");
