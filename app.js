@@ -1,10 +1,15 @@
-function check() {
-  let v = document.getElementById("input").value.toLowerCase().trim();
+let code = "";
 
-  if (v === "going") {
+function add(part) {
+  code += part;
+  document.getElementById("code").innerText = code;
+}
+
+function check() {
+  if (code === "going") {
     window.location.href = "node7.html";
   } else {
     document.getElementById("output").innerText =
-      "erro de sincronização... tenta outra vez";
+      "sequência inválida";
   }
 }
