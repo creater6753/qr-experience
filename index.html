@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <title>THE SIGNAL</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>THE SIGNAL</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -13,16 +13,27 @@
   <h1>THE SIGNAL</h1>
 
   <p id="output">
-    O sistema repete: NODE-7 não é um número. É uma palavra escondida.
-    <br><br>
-    Dica: 7 letras. Começa com G.
+    NODE-7 fragmentado.
+    Reconstrói o código ativando os blocos corretos.
   </p>
 
-  <input id="input" placeholder="insere o código..." />
-  <button onclick="check()">Enviar</button>
+  <p>Fragmentos:</p>
+
+  <button onclick="add('go')">GO</button>
+  <button onclick="add('in')">IN</button>
+  <button onclick="add('g')">G</button>
+  <button onclick="add('x')">X</button>
+
+  <br><br>
+
+  <p>Código atual:</p>
+  <p id="code"></p>
+
+  <button onclick="check()">confirmar</button>
 
 </div>
 
 <script src="app.js"></script>
+
 </body>
 </html>
