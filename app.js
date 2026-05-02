@@ -8,7 +8,10 @@ function load() {
 
   if (fase === 1) {
     title.innerText = "SINAL DETETADO";
-    text.innerText = "Há algo escondido neste código. Nem tudo é aleatório.\nDica: 3 letras mudam tudo.";
+    text.innerText = "NODE-7 encontrou-te.
+
+Dica: a primeira chave não é uma palavra.
+É uma intenção.";
   }
 
   if (fase === 2) {
