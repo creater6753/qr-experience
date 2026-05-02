@@ -2,36 +2,32 @@
 <html lang="pt">
 <head>
 <meta charset="UTF-8">
-<title>NODE-7</title>
+<title>NODE-7 CORE</title>
 </head>
 
 <body style="background:black;color:#00ff9d;font-family:monospace;text-align:center;padding-top:80px">
 
-<h1>NODE-7</h1>
+<h1>NODE-7 CORE</h1>
 
 <p>
-Entrada validada.
-</p>
-
-<p>
-O sistema interpreta padrões como fluxo.
+Regra aceite.
 </p>
 
 <pre>
-F L O W
-↓ ↓ ↓ ↓
-estado de transmissão contínua
+V L J Q D O
+↑ ↑ ↑ ↑ ↑ ↑
+transformação ativa
 </pre>
 
 <p>
-NODE-7 pergunta:
+O sistema pergunta:
 </p>
 
 <p>
-o que mantém um sistema em FLOW?
+o que acontece quando a informação é sempre deslocada?
 </p>
 
-<input id="input" placeholder="resposta..." />
+<input id="input" placeholder="interpretação..." />
 <button onclick="check()">confirmar</button>
 
 <script>
@@ -39,14 +35,14 @@ function check() {
   let v = document.getElementById("input").value.toLowerCase();
 
   if (
-    v.includes("energia") ||
-    v.includes("movimento") ||
-    v.includes("transmissao") ||
-    v.includes("continuidade")
+    v.includes("erro") ||
+    v.includes("ruido") ||
+    v.includes("distorcao") ||
+    v.includes("sinal")
   ) {
     window.location.href = "memory.html";
   } else {
-    alert("NODE-7 rejeitou a interpretação");
+    alert("interpretação rejeitada");
   }
 }
 </script>
