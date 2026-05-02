@@ -2,48 +2,41 @@
 <html lang="pt">
 <head>
 <meta charset="UTF-8">
-<title>MEMORY TRACE</title>
+<title>MEMORY BREACH</title>
 </head>
 
 <body style="background:black;color:#00ff9d;font-family:monospace;text-align:center;padding-top:80px">
 
-<h1>MEMÓRIA CORROMPIDA</h1>
+<h1>MEMORY BREACH</h1>
 
 <p>
-Recuperação parcial concluída.
-</p>
-
-<p>
-Registo oculto encontrado:
+Registo fragmentado encontrado:
 </p>
 
 <pre>
-S I G N A L
-↓ ↓ ↓ ↓ ↓ ↓
-o sistema comunica quando não deveria
+NODE-7 não é um sistema.
+É uma entidade distribuída.
 </pre>
 
 <p>
-Interpretação final necessária.
+3 fragmentos de chave existem:
 </p>
 
-<input id="input" placeholder="o que é SIGNAL?" />
-<button onclick="check()">confirmar</button>
+<p>
+[ FRAG-1: início ]<br>
+[ FRAG-2: meio ]<br>
+[ FRAG-3: fim ]
+</p>
+
+<p>
+Cada um está escondido numa decisão anterior.
+</p>
+
+<button onclick="go()">continuar investigação</button>
 
 <script>
-function check() {
-  let v = document.getElementById("input").value.toLowerCase();
-
-  if (
-    v.includes("comunicacao") ||
-    v.includes("informacao") ||
-    v.includes("sistema") ||
-    v.includes("dados")
-  ) {
-    window.location.href = "final.html";
-  } else {
-    alert("memória instável");
-  }
+function go() {
+  window.location.href = "final.html";
 }
 </script>
 
