@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>MEMORY</title>
+</head>
+<body style="background:black;color:#00ff9d;font-family:monospace;text-align:center">
 
+<h1>MEMÓRIA DETETADA</h1>
+
+<p>Tu já estiveste aqui antes.</p>
+<p>Mas não te lembras.</p>
+
+<p>NODE-7 está a reconstruir padrões.</p>
+
+<input id="c" placeholder="o que viste antes?" />
+<button onclick="check()">continuar</button>
+
+<script>
+function check(){
+  let v = document.getElementById("c").value.toLowerCase();
+
+  if(v.includes("signal") || v.includes("key")){
+    window.location.href = "final.html";
+  } else {
+    alert("memória rejeitada");
+  }
+}
+</script>
+
+</body>
+</html>
