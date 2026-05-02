@@ -1,35 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <title>NODE-7</title>
+<meta charset="UTF-8">
+<title>NODE-7</title>
 </head>
 
 <body style="background:black;color:#00ff9d;font-family:monospace;text-align:center;padding-top:100px">
 
-  <h1>NODE-7</h1>
+<h1>NODE-7</h1>
 
-  <p>O sistema confirmou a tua entrada.</p>
+<p>
+Entrada confirmada.
+</p>
 
-  <p>Pista recuperada da memória corrompida:</p>
-  <p><b>"o sistema observa o SIGNAL"</b></p>
+<p>
+O sistema não regista palavras.
+Regista sinais.
+</p>
 
-  <p>O que falta?</p>
+<p>
+Memória fragmentada:
+</p>
 
-  <input id="input" placeholder="resposta..." />
-  <button onclick="check()">confirmar</button>
+<p>
+S _ G N A L
+</p>
 
-  <script>
-    function check() {
-      let v = document.getElementById("input").value.toLowerCase().trim();
+<p>
+O sistema reconhece padrões incompletos.
+</p>
 
-      if (v === "signal") {
-        window.location.href = "memory.html";
-      } else {
-        alert("NODE-7 rejeitou a resposta");
-      }
-    }
-  </script>
+<input id="input" placeholder="completa o sinal..." />
+<button onclick="check()">confirmar</button>
+
+<script>
+function check() {
+  let v = document.getElementById("input").value.toLowerCase().trim();
+
+  if (v === "signal") {
+    window.location.href = "memory.html";
+  } else {
+    alert("padrão rejeitado");
+  }
+}
+</script>
 
 </body>
 </html>
