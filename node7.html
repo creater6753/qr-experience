@@ -9,19 +9,21 @@
 
   <h1>NODE-7</h1>
 
-  <p>O sistema reconheceu-te.</p>
-  <p>Agora responde corretamente.</p>
+  <p>O sistema confirmou a tua entrada.</p>
 
-  <br>
+  <p>Pista recuperada da memória corrompida:</p>
+  <p><b>"o sistema observa o SIGNAL"</b></p>
 
-  <input id="input" placeholder="código..." />
-  <button onclick="check()">entrar</button>
+  <p>O que falta?</p>
+
+  <input id="input" placeholder="resposta..." />
+  <button onclick="check()">confirmar</button>
 
   <script>
     function check() {
       let v = document.getElementById("input").value.toLowerCase().trim();
 
-      if (v === "going") {
+      if (v === "signal") {
         window.location.href = "memory.html";
       } else {
         alert("NODE-7 rejeitou a resposta");
