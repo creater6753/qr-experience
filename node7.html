@@ -5,42 +5,48 @@
 <title>NODE-7</title>
 </head>
 
-<body style="background:black;color:#00ff9d;font-family:monospace;text-align:center;padding-top:100px">
+<body style="background:black;color:#00ff9d;font-family:monospace;text-align:center;padding-top:80px">
 
 <h1>NODE-7</h1>
 
 <p>
-Entrada confirmada.
+Entrada validada.
 </p>
 
 <p>
-O sistema não regista palavras.
-Regista sinais.
+O sistema interpreta padrões como fluxo.
+</p>
+
+<pre>
+F L O W
+↓ ↓ ↓ ↓
+estado de transmissão contínua
+</pre>
+
+<p>
+NODE-7 pergunta:
 </p>
 
 <p>
-Memória fragmentada:
+o que mantém um sistema em FLOW?
 </p>
 
-<p>
-S _ G N A L
-</p>
-
-<p>
-O sistema reconhece padrões incompletos.
-</p>
-
-<input id="input" placeholder="completa o sinal..." />
+<input id="input" placeholder="resposta..." />
 <button onclick="check()">confirmar</button>
 
 <script>
 function check() {
-  let v = document.getElementById("input").value.toLowerCase().trim();
+  let v = document.getElementById("input").value.toLowerCase();
 
-  if (v === "signal") {
+  if (
+    v.includes("energia") ||
+    v.includes("movimento") ||
+    v.includes("transmissao") ||
+    v.includes("continuidade")
+  ) {
     window.location.href = "memory.html";
   } else {
-    alert("padrão rejeitado");
+    alert("NODE-7 rejeitou a interpretação");
   }
 }
 </script>
